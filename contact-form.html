@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: grey;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Poppins;
+        }
+
+        article{
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px grey;
+        }
+
+        .img {
+            width: 540px;
+            height: 560px;
+            background-image: url(marissa-grootes-H0YxjMzc6ZQ-unsplash.jpg);
+            background-size: cover;
+            border: none;
+            border-radius: 10px 0 0 10px;
+        }
+        .form-text{
+            width: 50%;
+            padding: 10px;
+        }
+
+        main{
+            width: 85vw;
+            height: 80vh;
+        }
+        .form-title{
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .form-description{
+            color: grey;
+        }
+
+        .detail-title{
+            color: grey;
+        }
+
+        .form-description , .form-title{
+            margin: 10px;
+        }
+
+        .comp-details{
+            margin: 30px 10px;
+        }
+
+        .form-input{
+            margin: 40px 10px;
+        }
+
+        .comp-details{
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+        }
+
+        .input-title{
+            margin-bottom: 15px;
+        }
+
+        label{
+            color: grey;
+        }
+
+        .form-input{
+            width: 70%;
+        }
+
+        input{
+            border: none;
+            border-bottom: 1px solid grey;
+            padding: 6px 3px;
+            outline: none;
+        }
+
+        .name , .Email , .message{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            margin-right: 150px;
+        }
+
+        textarea{
+            border: none;
+            border-bottom: 1px solid grey;
+            outline: none;
+        }
+
+        .btn{
+            border: 2px solid black;
+            width: 170px;
+            padding: 5px 10px;
+            text-align: center;
+            background-color: white;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <article>
+            <section class="img">
+                
+            </section>
+            <section class="form-text">
+                <h1 class="form-title">Contact us</h1>
+                <p class="form-description">Contact us for a quote, help or to join the team.</p>
+                <div class="comp-details">
+                    <div class="address">
+                        <p class="detail-title">Address</p>
+                        <p class="detail-description">2224 Lowe Haven</p>
+                    </div>
+                    <div class="email">
+                        <p class="detail-title">Email</p>
+                        <p class="detail-description">abc@studio.in</p>
+                    </div>
+                    <div class="phone">
+                        <p class="detail-title">Phone</p>
+                        <p class="detail-description">1234567891</p>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <h2 class="input-title">Get a quote</h2>
+                    <div class="name">
+                    <label for="name" class="input-name">Name</label>
+                    <input type="text" id="name">
+                    </div>
+                    <div class="Email">
+                    <label for="email" class="input-email">Email</label>
+                    <input type="text" id="email">
+                    </div>
+                    <div class="message">
+                    <label for="message" class="input-message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                    </div>     
+                </div>
+                <div class="button">
+                    <button class="btn">Send Message</button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+</body>
+</html>

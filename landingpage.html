@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: Roboto;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-section {
+            height: 60vh;
+            color: white;
+            border: none;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(vimal-s-cPGMrfAuUSg-unsplash.jpg);
+            background-size: cover;
+        }
+
+        .hero-title {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .hero-description {
+            font-size: 20px;
+        }
+
+        .hero-btn {
+            background-color: grey;
+            border-radius: 20px;
+            pad: 10px 20px;
+            font-size: 1.1em;
+            margin: 10px;
+            padding: 2px 7px;
+            border: none;
+        }
+
+        .hero-title,
+        .hero-description,
+        .hero-btn {
+            text-align: center;
+        }
+
+        .feature-section {
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        .card {
+            text-align: center;
+            width: 20%;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px 0px #000000a1;
+            transition-duration: 0.3s;
+        }
+
+        .card:hover {
+            background-color: rgba(199, 199, 199, 0.788);
+        }
+
+        .card-container {
+            display: flex;
+            /* flex-direction: column; */
+            gap: 50px;
+            justify-content: space-evenly;
+            /* align-items: center; */
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .service-section {
+            width: 80%;
+            margin: 50px auto;
+            /* border: 2px solid blueviolet; */
+        }
+
+        .service-image {
+            /* border: 2px solid red; */
+        }
+
+        .service-image img{
+            width: 100%;
+        }
+
+        .service-info {
+            /* border: 2px solid green; */
+            padding: 40px;
+        }
+
+        .service-title{
+            font-size: 30px;
+        }
+
+        .service-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-features li{
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        footer{
+            background-color: rgba(0, 0, 0, 0.799);
+            color: white;
+            padding: 60px;
+            display: grid;
+            grid-template-columns: 3fr 2fr 2fr 2fr;
+        }
+
+        .page-links{
+            padding: 0 0 0 30px;
+        }
+
+        .main-links h3, .main-links p{
+            margin: 8px;
+        }
+
+        .main-links a, .page-links a, .social-links a{
+            color: white;
+            display: block;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+        <article>
+            <section class="hero-section">
+                <h1 class="hero-title">Website Title</h1>
+
+                <p class="hero-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo impedit fuga
+                    deserunt soluta. Ea enim sed voluptate porro rerum. Magnam!</p>
+
+                <button class="hero-btn">Learn More</button>
+            </section>
+
+            <section class="feature-section">
+                <div class="card-container">
+
+                    <div class="card">
+                        <i class="fa-solid fa-rocket fa-3x"></i>
+                        <h3>Card Title1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quo quis labore distinctio
+                            voluptas esse consequuntur at aspernatur nobis eaque.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-rocket fa-3x"></i>
+                        <h3>Card Title2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quo quis labore distinctio
+                            voluptas esse consequuntur at aspernatur nobis eaque.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-rocket fa-3x"></i>
+                        <h3>Card Title3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quo quis labore distinctio
+                            voluptas esse consequuntur at aspernatur nobis eaque.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="service-section">
+                <div class="row">
+                    <div class="service-image">
+                        <img src="undraw_product_explainer_8jbm.png" alt="">
+                    </div>
+
+                    <div class="service-info">
+                        <h2 class="service-title">Service Title</h2>
+                        <ul class="service-features">
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service Feature 1 
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service Feature 2
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service Feature 3 
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service Feature 4
+                            </li>
+
+                        </ul>
+
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="service-info">
+                        <h2 class="service-title">Service Title</h2>
+                        <ul class="service-features">
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service Feature 1 
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service Feature 2
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service Feature 3 
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service Feature 4
+                            </li>
+
+                        </ul>
+
+                        <button class="btn">Submit</button>
+                    </div>
+                    
+                    <div class="service-image">
+                        <img src="undraw_product_explainer_8jbm.png" alt="">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="contact-section">
+
+            </section>
+            
+        </article>
+    </main>
+    
+    <footer>
+        <div class="main-links">
+            <h3>Company Name</h3>
+            <p>&copy; 2024, All Rights Reserved</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero voluptate quae fugiat minima dolore, cupiditate aspernatur explicabo facilis? Modi, odio distinctio. Nemo unde culpa placeat mollitia, totam nisi iste quaerat.</p>
+        </div>
+        <div class="page-links">
+            <a href="#">
+                Link 1
+            </a>
+            <a href="#">
+                Link 2
+            </a>
+            <a href="#">
+                Link 3
+            </a>
+            <a href="#">
+                Link 4
+            </a>
+        </div>
+        <div class="social-links">
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>Facebook
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>Instagram
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-linkedin"></i>LinkedIn
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-github"></i>Github
+            </a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

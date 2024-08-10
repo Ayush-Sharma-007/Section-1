@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Poppins;
+        }
+
+        main {
+            height: 100vh;
+            background-color: rgba(209, 186, 151, 0.779);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90vw;
+            height: 90vh;
+            border: none;
+            box-shadow: 2px 2px 10px 3px rgba(59, 59, 59, 0.637);
+            display: grid;
+            grid-template-columns: 1.5fr 1.5fr;
+        }
+
+        .image {
+            border: none;
+            box-sizing: border-box;
+            background-image: url(iphone-15-pro-finish-select-202309-6-7inch-blacktitanium.webp);
+            background-size: 600px 498px;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .detail {
+            border: none;
+            background-color: rgba(121, 121, 121, 0.619);
+            display: flex;
+            flex-direction: column;
+            row-gap: 7px;
+            box-sizing: border-box;
+            padding: 20px 0 0 20px
+        }
+
+        span {
+            text-decoration: line-through;
+        }
+
+        .colors {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+
+        .black-titanium,
+        .blue-titanium,
+        .natural-titanium,
+        .white-titanium {
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+            border: none;
+            box-shadow: 1px 1px 10px 1px rgba(128, 128, 128, 0.779);
+        }
+
+        .black-titanium {
+            background-color: rgb(67, 67, 67);
+        }
+
+        .blue-titanium {
+            background-color: rgba(29, 29, 62, 0.879);
+        }
+
+        .natural-titanium {
+            background-color: rgb(214, 197, 170);
+        }
+
+        .white-titanium {
+            background-color: rgb(235, 235, 235);
+        }
+        .btn{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            row-gap: 10px;
+            width: 40%;
+        }
+        .add-to-cart{
+            border: none;
+            padding: 5px;
+            border-radius: 20px;
+            background-color: yellow;
+        }
+        .buy-now{
+            border: none;
+            padding: 5px;
+            border-radius: 20px;
+            background-color: orange;
+        }
+        .image img{
+            width: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="image">
+                
+            </div>
+
+            <div class="detail">
+                <h2 class="product-title">Apple iPhone 15 Pro Max (256 GB) - Black Titanium</h2>
+                <p class="price">&#8377; 1,51,700</p>
+                <label for="mrp">M.R.P.:</label>
+                <span class="mrp">&#8377;1,59,900</span>
+                <p>Inclusive of all taxes</p>
+                <div class="colors">
+                    <p>Color : </p>
+                    <div class="black-titanium"></div>
+                    <div class="blue-titanium"></div>
+                    <div class="natural-titanium"></div>
+                    <div class="white-titanium"></div>
+                </div>
+                <p class="size">Size: 256 GB</p>
+                <p class="brand">Brand: Apple</p>
+                <p class="os">Operating System: IOS</p>
+                <p class="screen-size">Screen Size: 6.7 inches</p>
+                <p class="model-name">Model Name: iPhone 15 pro max</p>
+                <div class="btn">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
